@@ -1,0 +1,11 @@
+version: '2'
+services:
+  alpine-node:
+    build: .
+    container_name: alpine-node-container
+    ports:
+      - "3003:3000"
+    volumes:
+      - ./:/app
+      - ./entrypoint.sh:/usr/local/bin/entrypoint.sh
+    entrypoint: /usr/local/bin/entrypoint.sh
