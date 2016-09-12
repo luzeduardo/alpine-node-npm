@@ -1,7 +1,7 @@
 # Alpine
 
 You need to create an ```entrypoint.sh```
-install deps ```npm install```
+with ```npm install``` inside and call
 your server bootstrap with webpack, grunt, npm ...```command```
 
 ## Ports
